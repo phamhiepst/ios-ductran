@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var authorLable: UILabel!
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var inspireMeButton: UIButton!
     
@@ -19,7 +20,8 @@ class ViewController: UIViewController {
     @IBAction func inspireMeDidTap(sender: UIButton) {
         // change the text
         let quote = quotes.randomQuote()
-        quoteLabel.text = quote
+        quoteLabel.text = quote.0
+        authorLable.text = quote.1
         
         // change color of the text
         quoteLabel.backgroundColor = randomLableColor()
@@ -35,9 +37,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // dynamically changing font size of UILabel
+        quoteLabel.adjustsFontSizeToFitWidth = true
+        
         // change the text randomly
         let quote = quotes.randomQuote()
-        quoteLabel.text = quote
+        quoteLabel.text = quote.0
+        authorLable.text = quote.1
 
     }
     
@@ -58,15 +64,15 @@ class ViewController: UIViewController {
         
         switch randomNumber {
         case 0:
-            return UIColor(red: 1, green: 0.8, blue: 0, alpha: 0.9) /* #ffcc00 */
+            return UIColor(red: 1, green: 0.8, blue: 0, alpha: 0.7) /* #ffcc00 */
         case 1:
-            return UIColor(red: 0.8314, green: 0.4039, blue: 0.9176, alpha: 0.9) /* #d467ea */
+            return UIColor(red: 0.8314, green: 0.4039, blue: 0.9176, alpha: 0.7) /* #d467ea */
         case 2:
-            return UIColor(red: 0.3412, green: 0.7765, blue: 0.7059, alpha: 0.9) /* #57c6b4 */
+            return UIColor(red: 0.3412, green: 0.7765, blue: 0.7059, alpha: 0.7) /* #57c6b4 */
         case 3:
-            return UIColor(red: 0.3686, green: 0.7569, blue: 0.3333, alpha: 0.9) /* #5ec155 */
+            return UIColor(red: 0.3686, green: 0.7569, blue: 0.3333, alpha: 0.7) /* #5ec155 */
         default:
-            return UIColor(red: 0.9765, green: 0.2745, blue: 0.1647, alpha: 0.9) /* #f9462a */
+            return UIColor(red: 0.9765, green: 0.2745, blue: 0.1647, alpha: 0.7) /* #f9462a */
         }
     }
     
