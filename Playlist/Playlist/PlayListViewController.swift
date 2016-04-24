@@ -10,6 +10,7 @@ import UIKit
 
 class PlayListViewController: UIViewController {
 
+    // MARK: - Properties
     @IBOutlet weak var coverImage0: UIImageView!
     @IBOutlet weak var coverImage1: UIImageView!
     @IBOutlet weak var coverImage2: UIImageView!
@@ -25,6 +26,7 @@ class PlayListViewController: UIViewController {
     
     var coverImages: [UIImageView]!
     
+    // MARK: - View controller life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,4 +50,12 @@ class PlayListViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: - Target / Action
+    @IBAction func showAlbum(sender: UITapGestureRecognizer) {
+        print("haaaaaaaaaaaaaaaaaaa")
+    }
+    
+    
+    
 }

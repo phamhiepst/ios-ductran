@@ -49,41 +49,89 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-8K-kzJ">
                                             <rect key="frame" x="11" y="116" width="298" height="400"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="glx-GN-wod">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="glx-GN-wod">
                                                     <rect key="frame" x="102" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Tia-eB-rjf" appends="YES" id="DFZ-YV-KhY"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-GU-KYA">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-GU-KYA">
                                                     <rect key="frame" x="204" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="qgc-Np-Jga" appends="YES" id="T0O-pH-wZl"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-mg-k93">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-mg-k93">
                                                     <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Hvq-Xi-SHg" appends="YES" id="Rbe-TE-nF6"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-ei-7w1">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-ei-7w1">
                                                     <rect key="frame" x="0.0" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="ffM-8w-HR9" appends="YES" id="56l-Mb-HMp"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-n0-Exw">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-n0-Exw">
                                                     <rect key="frame" x="102" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="mJI-cw-kvV" appends="YES" id="bIR-nf-9v0"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-GD-gpo">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-GD-gpo">
                                                     <rect key="frame" x="204" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="cgZ-9Q-5XR" appends="YES" id="dU5-tz-Qhm"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-0H-q68">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-0H-q68">
                                                     <rect key="frame" x="0.0" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="H31-yh-bYL" appends="YES" id="KAB-4F-fUN"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="IKY-AI-aeU">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="IKY-AI-aeU">
                                                     <rect key="frame" x="0.0" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="rjR-of-IH3" appends="YES" id="T9G-oj-AWn"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="qce-hd-c4R">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="qce-hd-c4R">
                                                     <rect key="frame" x="102" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="NGF-N4-RYE" appends="YES" id="MlH-wE-AkJ"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="1To-zg-XZI">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="1To-zg-XZI">
                                                     <rect key="frame" x="204" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="HvC-jq-P8P" appends="YES" id="Agx-f2-eFl"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-ck-hvg">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-ck-hvg">
                                                     <rect key="frame" x="102" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="wa9-hA-O3V" appends="YES" id="piX-U6-J72"/>
+                                                    </connections>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="enI-vH-OMA">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="enI-vH-OMA">
                                                     <rect key="frame" x="204" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="JMU-ZF-9MM" appends="YES" id="Wuw-2B-gsf"/>
+                                                    </connections>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -112,6 +160,66 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hvq-Xi-SHg">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="qvK-7P-ew5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Tia-eB-rjf">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="DSS-Ft-SJ5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qgc-Np-Jga">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="AiJ-Ap-3mP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ffM-8w-HR9">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="pVQ-h1-goB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mJI-cw-kvV">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="NeH-0C-1gn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cgZ-9Q-5XR">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="hnw-Bg-hrI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="H31-yh-bYL">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="Paq-DI-kDt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NGF-N4-RYE">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="cf0-oX-weG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HvC-jq-P8P">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="k7U-gf-tNT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rjR-of-IH3">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="N4N-K7-Hsb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wa9-hA-O3V">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="D3z-KR-HmQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JMU-ZF-9MM">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="DYc-bD-J8v"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1192" y="316"/>
         </scene>
