@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L6v-4f-XrV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--The Beatles-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlayListViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collage" translatesAutoresizingMaskIntoConstraints="NO" id="3Fo-db-x4T">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxj-rw-OVK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Af2-e4-7oS">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulM-xM-6P3">
+                                            <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="MTr-Wg-HH5">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usE-NY-lEL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                        <state key="normal" title="My Favorites" image="Favourites"/>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some albums from 1960 to 1970" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJX-eR-bC8">
+                                            <rect key="frame" x="33" y="73" width="254" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-8K-kzJ">
+                                            <rect key="frame" x="11" y="116" width="298" height="400"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="glx-GN-wod">
+                                                    <rect key="frame" x="102" y="0.0" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-GU-KYA">
+                                                    <rect key="frame" x="204" y="0.0" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-mg-k93">
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-ei-7w1">
+                                                    <rect key="frame" x="0.0" y="102" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-n0-Exw">
+                                                    <rect key="frame" x="102" y="102" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-GD-gpo">
+                                                    <rect key="frame" x="204" y="102" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-0H-q68">
+                                                    <rect key="frame" x="0.0" y="204" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="IKY-AI-aeU">
+                                                    <rect key="frame" x="0.0" y="306" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="qce-hd-c4R">
+                                                    <rect key="frame" x="102" y="204" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="1To-zg-XZI">
+                                                    <rect key="frame" x="204" y="204" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-ck-hvg">
+                                                    <rect key="frame" x="102" y="306" width="94" height="94"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="enI-vH-OMA">
+                                                    <rect key="frame" x="204" y="306" width="94" height="94"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Beatles" id="Jcj-EX-YRK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="coverImage0" destination="mFb-mg-k93" id="Gdl-bM-eZe"/>
+                        <outlet property="coverImage1" destination="glx-GN-wod" id="X4k-iB-VOJ"/>
+                        <outlet property="coverImage10" destination="NTh-ck-hvg" id="tfC-UR-fur"/>
+                        <outlet property="coverImage11" destination="enI-vH-OMA" id="KJp-kw-36Y"/>
+                        <outlet property="coverImage2" destination="fXo-GU-KYA" id="ZBs-0X-W6e"/>
+                        <outlet property="coverImage3" destination="Eva-ei-7w1" id="DSu-DV-blk"/>
+                        <outlet property="coverImage4" destination="UEb-n0-Exw" id="kZO-hv-Hjq"/>
+                        <outlet property="coverImage5" destination="4VE-GD-gpo" id="WH7-Id-ufe"/>
+                        <outlet property="coverImage6" destination="wqX-0H-q68" id="YBy-lW-3ld"/>
+                        <outlet property="coverImage7" destination="qce-hd-c4R" id="LdG-dw-U09"/>
+                        <outlet property="coverImage8" destination="1To-zg-XZI" id="4g4-3p-Ieh"/>
+                        <outlet property="coverImage9" destination="IKY-AI-aeU" id="mxo-dy-mdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="316"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pyz-92-Mhl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L6v-4f-XrV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WZN-oM-93Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OJa-S3-R0B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zY-Ak-vLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Abbey Road" width="1636" height="1482"/>
+        <image name="Favourites" width="28" height="26"/>
+        <image name="collage" width="640" height="1136"/>
+    </resources>
+</document>
