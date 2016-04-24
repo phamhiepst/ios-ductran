@@ -36,8 +36,16 @@ class PlayListViewController: UIViewController {
     
     // set the cover images for those UIOulets
     func  updateUI(){
-        for coverImage in coverImages{
-            coverImage.image = UIImage(named: "A Hard Day's Night")
+        
+        let albums = TheBeatlesLibrary().albums
+        
+        for i in 0..<coverImages.count{
+            var coverImage = coverImages[i]
+            // grasp our model here
+            let album = albums[i]
+            if let imageName = album["coverImageName"] as? String{
+                coverImage.image = UIImage(named: imageName)
+            }
         }
     }
 }
