@@ -23,6 +23,7 @@ class PlayListViewController: UIViewController {
     @IBOutlet weak var coverImage9: UIImageView!
     @IBOutlet weak var coverImage10: UIImageView!
     @IBOutlet weak var coverImage11: UIImageView!
+   
     
     var coverImages: [UIImageView]!
     
@@ -38,24 +39,40 @@ class PlayListViewController: UIViewController {
     
     // set the cover images for those UIOulets
     func  updateUI(){
-        
-        let albums = TheBeatlesLibrary().albums
-        
         for i in 0..<coverImages.count{
-            var coverImage = coverImages[i]
+            let coverImage = coverImages[i]
             // grasp our model here
-            let album = albums[i]
-            if let imageName = album["coverImageName"] as? String{
-                coverImage.image = UIImage(named: imageName)
-            }
+            let album = Album(index: i)
+            coverImage.image = UIImage(named: album.coverImageName!)
         }
     }
     
     // MARK: - Target / Action
     @IBAction func showAlbum(sender: UITapGestureRecognizer) {
-        print("haaaaaaaaaaaaaaaaaaa")
+        performSegueWithIdentifier("Show Album", sender: sender)
     }
     
+    @IBAction func showFavoriteAlbum(sender: UIButton)
+    {
+        performSegueWithIdentifier("Show Favorite", sender: sender)
+    }
     
+    // MARK: - Navigation
+    override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier{
+            switch identifier {
+            case "Show Album":
+                // do something
+                let albumViewController = segue.destinationViewController as! AlbumViewController
+                let albumImageView = sender?.view as! UIImageView
+                if let index = coverImages.indexOf(albumImageView){
+                    let album  = Album(index: index)
+                    albumViewController.album = album
+                }
+            default:
+                break
+            }
+        }
+    }
     
 }

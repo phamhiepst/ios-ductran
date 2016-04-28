@@ -34,7 +34,14 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usE-NY-lEL">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                                        <state key="normal" title="My Favorites" image="Favourites"/>
+                                                        <color key="tintColor" red="0.99716243360000001" green="1" blue="0.99724564429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="My Favorites" image="Favourites">
+                                                            <color key="titleColor" red="0.99716243358565526" green="1" blue="0.99724564427891149" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" red="0.99716243360000001" green="1" blue="0.99724564429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="YMl-Pf-awO" kind="show" identifier="Show Favorite" id="6hL-rJ-4Sq"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </view>
@@ -49,84 +56,84 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-8K-kzJ">
                                             <rect key="frame" x="11" y="116" width="298" height="400"/>
                                             <subviews>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="glx-GN-wod">
-                                                    <rect key="frame" x="102" y="0.0" width="94" height="94"/>
-                                                    <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="Tia-eB-rjf" appends="YES" id="DFZ-YV-KhY"/>
-                                                    </connections>
-                                                </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-GU-KYA">
-                                                    <rect key="frame" x="204" y="0.0" width="94" height="94"/>
-                                                    <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="qgc-Np-Jga" appends="YES" id="T0O-pH-wZl"/>
-                                                    </connections>
-                                                </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-mg-k93">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-mg-k93">
                                                     <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="Hvq-Xi-SHg" appends="YES" id="Rbe-TE-nF6"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-ei-7w1">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="glx-GN-wod">
+                                                    <rect key="frame" x="102" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Tia-eB-rjf" appends="YES" id="DFZ-YV-KhY"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-GU-KYA">
+                                                    <rect key="frame" x="204" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="qgc-Np-Jga" appends="YES" id="T0O-pH-wZl"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-ei-7w1">
                                                     <rect key="frame" x="0.0" y="102" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="ffM-8w-HR9" appends="YES" id="56l-Mb-HMp"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-n0-Exw">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-n0-Exw">
                                                     <rect key="frame" x="102" y="102" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="mJI-cw-kvV" appends="YES" id="bIR-nf-9v0"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-GD-gpo">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-GD-gpo">
                                                     <rect key="frame" x="204" y="102" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="cgZ-9Q-5XR" appends="YES" id="dU5-tz-Qhm"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-0H-q68">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-0H-q68">
                                                     <rect key="frame" x="0.0" y="204" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="H31-yh-bYL" appends="YES" id="KAB-4F-fUN"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="IKY-AI-aeU">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IKY-AI-aeU">
                                                     <rect key="frame" x="0.0" y="306" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="rjR-of-IH3" appends="YES" id="T9G-oj-AWn"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="qce-hd-c4R">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qce-hd-c4R">
                                                     <rect key="frame" x="102" y="204" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="NGF-N4-RYE" appends="YES" id="MlH-wE-AkJ"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="1To-zg-XZI">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1To-zg-XZI">
                                                     <rect key="frame" x="204" y="204" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="HvC-jq-P8P" appends="YES" id="Agx-f2-eFl"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-ck-hvg">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-ck-hvg">
                                                     <rect key="frame" x="102" y="306" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="wa9-hA-O3V" appends="YES" id="piX-U6-J72"/>
                                                     </connections>
                                                 </imageView>
-                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Abbey Road" translatesAutoresizingMaskIntoConstraints="NO" id="enI-vH-OMA">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enI-vH-OMA">
                                                     <rect key="frame" x="204" y="306" width="94" height="94"/>
                                                     <gestureRecognizers/>
                                                     <connections>
@@ -157,6 +164,7 @@
                         <outlet property="coverImage7" destination="qce-hd-c4R" id="LdG-dw-U09"/>
                         <outlet property="coverImage8" destination="1To-zg-XZI" id="4g4-3p-Ieh"/>
                         <outlet property="coverImage9" destination="IKY-AI-aeU" id="mxo-dy-mdY"/>
+                        <segue destination="wxw-w4-deO" kind="show" identifier="Show Album" id="qXB-xM-eiG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -223,6 +231,97 @@
             </objects>
             <point key="canvasLocation" x="1192" y="316"/>
         </scene>
+        <!--Album View Controller-->
+        <scene sceneID="tvb-3z-8Ny">
+            <objects>
+                <viewController id="wxw-w4-deO" customClass="AlbumViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3WW-cr-PUq"/>
+                        <viewControllerLayoutGuide type="bottom" id="n11-nW-rDC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DtZ-jo-wQG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGy-IF-PXW">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZxT-5Z-ZDE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="P1X-BP-Tzm">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3M-cD-WM4">
+                                            <rect key="frame" x="0.0" y="64" width="320" height="320"/>
+                                            <gestureRecognizers/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-hL-5Uq">
+                                            <rect key="frame" x="0.0" y="382" width="320" height="186"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" red="0.97442411910000004" green="1" blue="0.97288835539999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Like" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-ML-NMW">
+                                            <rect key="frame" x="0.0" y="359" width="320" height="25"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.61742995689655178" colorSpace="calibratedRGB"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" red="0.97345982789999996" green="1" blue="0.91682526610000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="wUV-kJ-A5s" appends="YES" id="Sob-Xy-xY6"/>
+                                            </connections>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumCoverImageView" destination="r3M-cD-WM4" id="QOu-gN-2jn"/>
+                        <outlet property="backgroundImageView" destination="GGy-IF-PXW" id="kZZ-uh-Eb3"/>
+                        <outlet property="descriptionTextView" destination="4gU-hL-5Uq" id="rwu-I5-9He"/>
+                        <outlet property="likeLabel" destination="PbW-ML-NMW" id="A8n-OT-gtC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPn-ty-oMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wUV-kJ-A5s">
+                    <connections>
+                        <action selector="like:" destination="wxw-w4-deO" id="wdJ-pL-TTG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1624" y="316"/>
+        </scene>
+        <!--Favorite View Controller-->
+        <scene sceneID="Vf1-NS-pda">
+            <objects>
+                <viewController id="YMl-Pf-awO" customClass="FavoriteViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wsj-Sy-xwk"/>
+                        <viewControllerLayoutGuide type="bottom" id="WeL-I1-kzd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nbC-uP-O9f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You don't have any favorite album" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Nh-lP-nkX">
+                                <rect key="frame" x="-25" y="202" width="370" height="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sra-rJ-Ceu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="1059"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="pyz-92-Mhl">
             <objects>
@@ -232,6 +331,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WZN-oM-93Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.97442411910000004" green="1" blue="0.97288835539999996" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
@@ -249,7 +349,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Abbey Road" width="1636" height="1482"/>
         <image name="Favourites" width="28" height="26"/>
         <image name="collage" width="640" height="1136"/>
     </resources>
