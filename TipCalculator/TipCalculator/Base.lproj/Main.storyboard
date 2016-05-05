@@ -17,53 +17,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-cJ-DAV">
-                                <rect key="frame" x="80" y="45" width="160" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total bill:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quj-g0-XOA">
-                                <rect key="frame" x="20" y="95" width="69" height="21"/>
+                                <rect key="frame" x="20" y="110" width="69" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip %:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA8-bh-5Qb">
-                                <rect key="frame" x="20" y="170" width="47" height="21"/>
+                                <rect key="frame" x="20" y="185" width="63" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-RF-4u1">
-                                <rect key="frame" x="20" y="124" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total bill before tax" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-RF-4u1">
+                                <rect key="frame" x="20" y="139" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="amountOfBeforeTaxTextFeildChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="7UC-aE-mMP"/>
+                                    <action selector="amountOfBeforeTaxTextFeildChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hgP-rg-ps2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8xK-Dr-IRw"/>
+                                </connections>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.10000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="8eu-iP-wWZ">
-                                <rect key="frame" x="83" y="166" width="219" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.050000000000000003" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="8eu-iP-wWZ">
+                                <rect key="frame" x="83" y="181" width="219" height="31"/>
+                                <connections>
+                                    <action selector="tipPercentageSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9L8-Ey-kLw"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nku-C4-DKz">
-                                <rect key="frame" x="83" y="270" width="219" height="31"/>
+                                <rect key="frame" x="83" y="285" width="219" height="31"/>
+                                <connections>
+                                    <action selector="numberOfPeopleValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f5k-KI-Zfj"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tQ-yf-MeQ">
-                                <rect key="frame" x="20" y="205" width="280" height="40"/>
+                                <rect key="frame" x="20" y="220" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.48399627924177258" green="0.91695807130024753" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.97442411910000004" green="1" blue="0.97288835539999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-SI-Se5">
-                                <rect key="frame" x="20" y="310" width="280" height="40"/>
+                                <rect key="frame" x="20" y="325" width="280" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.55475971082654751" blue="0.35244533794208222" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.97442411910000004" green="1" blue="0.97288835539999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLG-O4-g61">
-                                <rect key="frame" x="20" y="274" width="51" height="21"/>
+                                <rect key="frame" x="20" y="289" width="63" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-cJ-DAV">
+                                <rect key="frame" x="50" y="44" width="220" height="43"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.19071990489999999" blue="0.097944061410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -76,7 +87,8 @@
                         <outlet property="numberOfPeopleSilder" destination="Nku-C4-DKz" id="8Zr-b3-12t"/>
                         <outlet property="resultLable" destination="8tQ-yf-MeQ" id="3PT-MP-hCY"/>
                         <outlet property="tipPercentageLabel" destination="cA8-bh-5Qb" id="x0C-jL-41P"/>
-                        <outlet property="tipPercentageSlider" destination="8eu-iP-wWZ" id="oo3-QD-lEG"/>
+                        <outlet property="tipPercentageSlider" destination="8eu-iP-wWZ" id="g85-TG-GS8"/>
+                        <outlet property="totalAmountPerPeopleLabel" destination="1zf-SI-Se5" id="8VA-Ey-qC9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
